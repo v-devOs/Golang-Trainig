@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+
 	"rsc.io/quote"
 )
 
@@ -29,6 +30,15 @@ func main() {
 	fmt.Println("Hola mundo")
 	fmt.Println(quote.Go())
 
+	// fullName := "Uriel Galindo \t(alias  \"vdeVos\")\n"
+
+	// Podemos obtener el valor asscii de algun caracter
+	// var a byte = 'a'
+
+	// Representación de caracteres unicode
+
+	var emoki rune = '❤'
+
 	// Declaración de variables
 
 	/*Forma uno de declarar variables*/
@@ -40,7 +50,9 @@ func main() {
 	// var firstName, lastName, age = "Uriel", "Galindo", 20
 
 	//Declaración e inicialisación en linea solo se pueden declarar dentro de funciones
-	firstName, lastName, age := "Uriel", "Galindo", 20
+	// firstName, lastName, age := "Uriel", "Galindo", 20
 
-	fmt.Println(firstName, lastName, age, Pi, x, y, z, w, Martes)
+	// fmt.Println(firstName, lastName, age, Pi, x, y, z, w, Martes)
+
+	fmt.Println(emoki)
 }
