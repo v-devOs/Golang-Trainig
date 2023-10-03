@@ -5,6 +5,26 @@ import (
 	"rsc.io/quote"
 )
 
+// go mod init 'nombre'
+// go get nombre 'paquete de terceros'
+
+/*Declaración de constantes a nivel de paquete*/
+const Pi = 3.14
+
+const (
+	x = 100
+	y = 0b1010 // binario
+	z = 0o12   // Octal
+	w = 0xFF   // Hexadecimal
+)
+
+// iota inicia en 0 y hereda el siguiente valor sucesivamente
+const (
+	Domingo = iota + 1
+	Lunes
+	Martes
+)
+
 func main() {
 	fmt.Println("Hola mundo")
 	fmt.Println(quote.Go())
@@ -22,5 +42,5 @@ func main() {
 	//Declaración e inicialisación en linea solo se pueden declarar dentro de funciones
 	firstName, lastName, age := "Uriel", "Galindo", 20
 
-	fmt.Println(firstName, lastName, age)
+	fmt.Println(firstName, lastName, age, Pi, x, y, z, w, Martes)
 }
